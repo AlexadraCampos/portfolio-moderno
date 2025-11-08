@@ -240,6 +240,23 @@ section {
   transform: scale(1.05);
 }
 
+.repo-list h1 {
+  font-size: 1.3em;       
+  color: white;       
+  font-weight: 700;      
+  margin-bottom: 10px;    
+  text-align: center;     
+  text-transform: capitalize; 
+}
+
+/* estiliza a descrição (subtítulo) */
+.repo-list p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
   .projetos {
