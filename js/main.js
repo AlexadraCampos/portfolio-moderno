@@ -1,8 +1,8 @@
- // Configuração Particles.js
+// <---- Configuração Particles.js ---- >
  particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 100,
       "density": {
         "enable": true,
         "value_area": 800
@@ -31,7 +31,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 6,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -44,7 +44,8 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "grad",
+    
       },
       "onclick": {
         "enable": true,
@@ -54,17 +55,16 @@
     },
     "modes": {
       "grab": {
-        "distance": 200,
+        "distance": 140,
         "line_linked": {
-          "opacity": 0.6
+          "opacity": 1
         }
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 5
       }
     }
   },
   "retina_detect": true
 });
-
 

@@ -4,7 +4,7 @@ const username = "AlexadraCampos";
 const projetosSelecionados = [
   "Ponto-_de-_Luxo",
   "clinica",
-  "PaginaIDGE",
+  "pluma",
   "portfolio-powerbi",
 ];
 
