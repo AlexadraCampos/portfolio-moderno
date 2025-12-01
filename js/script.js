@@ -4,8 +4,10 @@ const username = "AlexadraCampos";
 const projetosSelecionados = [
   "Ponto-_de-_Luxo",
   "clinica",
+  "PaginaIDGE",
   "pluma",
   "portfolio-powerbi",
+  "sistema_de_gerenciamento_de_notas_front",
 ];
 
 async function loadRepos() {
@@ -44,11 +46,6 @@ async function loadRepos() {
         <p>${repo.description || 'Clique na imagem para ver mais detalhes'}</p>
       </a>
     `;
-
-    // Power BI, usa o link do site
-    const projectLink = repo.name === "portfolio-powerbi"
-    ? "https://portfolio-powerbi.netlify.app/" 
-    : repo.html_url;
 
     container.appendChild(div);
   }
