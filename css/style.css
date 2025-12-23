@@ -73,8 +73,6 @@ header {
   color: #00ffd5;
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -107,7 +105,6 @@ header {
 
 
 }
-
 
 .hero-content h1 {
   font-size: 3em;
@@ -169,21 +166,12 @@ section {
   color: #00ffd5;
 }
 
-
 .menu-toggle {
   display: none;
   font-size: 1.8em;
   cursor: pointer;
 }
 
-.repo-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 25px;
-  padding: 40px 0;
-}
 
 .icon {
   width: 20px;
@@ -191,88 +179,108 @@ section {
  
   
 }
-
 /* PROJETOS */
 .projetos h1 {
   color: #0077cc;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 2em;
-  
 }
 
 .projetos {
   padding: 60px 5%; 
 }
 
-.repo-list {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  
+/* Container dos cards */
+#repo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 340px);
+  justify-content: center;
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+/* Cada card individual */
 .repo-list {
   background-color: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
   transition: transform 0.3s;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+  width: 340px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .repo-list:hover {
   transform: scale(1.05);
 }
+
 .repo-list a {
   color: white;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Título dentro do card - MUDE DE h1 PARA h2 */
+.repo-list h2 {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: capitalize;
+  order: 1;
 }
 
 .repo-list img {
   width: 300px;
   height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 12px;
   margin-bottom: 15px;
   transition: transform 0.3s ease;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  order: 2;
 }
 
 .repo-list img:hover {
   transform: scale(1.05);
 }
 
-.repo-list h1 {
-  font-size: 1.3em;       
-  color: white;       
-  font-weight: 700;      
-  margin-bottom: 10px;    
-  text-align: center;     
-  text-transform: capitalize; 
-}
-
-/* estiliza a descrição (subtítulo) */
 .repo-list p {
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  color: #999;
   margin-top: 5px;
   text-align: center;
+  line-height: 1.4;
+  order: 3;
 }
 
-/* --- RESPONSIVIDADE --- */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .projetos {
     padding: 40px 8%;
   }
-
-  .repo-list {
-    flex-direction: column;
-    align-items: center;
+  
+  #repo {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
-
-  .repo {
-    width: 90%;
+  
+  .repo-list {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
   }
 }

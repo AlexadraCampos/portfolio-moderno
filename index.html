@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexandra Cordeiro | Portfólio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
-
 <body>
+  <!-- HEADER -->
   <header class="header-nav">
     <nav class="navbar">
       <div class="logo">A.C.</div>
+
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
-
-
       </ul>
-      <div class="menu-toggle">&#9776;</div>
     </nav>
   </header>
-
-
+  <!-- HOME -->
   <section id="home">
     <div id="particles-js"></div>
+
     <div class="hero-content">
       <h1>Olá, Muito Prazer!</h1>
-      <p lass="descricao">Meu nome é <strong>Alexandra Cordeiro</strong>, e sou uma <strong>estudante de Análise e
-          Desenvolvimento de Sistemas (ADS)</strong> no terceiro período.
+      <p>Meu nome é <strong>Alexandra Cordeiro</strong>, e sou uma <strong>estudante de Análise e
+        Desenvolvimento de Sistemas (ADS)</strong> no terceiro período.
         Desde cedo, me apaixonei por tecnologia minhas habilidades incluem:</p>
-
       <ul>
         <li><strong>Linguagens de programação:</strong> Python, Java, C, JavaScript</li>
         <li><strong>Desenvolvimento web:</strong> HTML, CSS, Flask, Django, React</li>
@@ -41,25 +37,35 @@
       </ul>
     </div>
   </section>
+  
+  <!-- PROJETOS -->
+  <section id="projetos" class="projetos">
+    <h1>Projetos no GitHub</h1>
 
-
-  <section id="projetos" class="texto-projetos projetos">
-    <h1>Projetos no GitHub</h1>    
-      <div id="repo" class="repo-list"></div>
+    <!-- cards são injetados aqui via JS -->
+    <div id="repo"></div>
   </section>
- 
 
+  <!-- CONTATO -->
   <section id="contato" class="contato">
     <h1>Contato</h1>
+
     <div class="texto-contato">
-      <img src="./img/communication.png" class="icon" /><a href="mailto:alexandrac.campos97@gmail.com">Email</a>
-      <img src="./img/linkedin.png" class="icon" /><a href="https://www.linkedin.com/in/alexandra-cordeiro-campos/"
-        target="_blank">Linkedin</a>
+      <img src="./img/communication.png" class="icon" />
+      <a href="mailto:alexandrac.campos97@gmail.com">Email</a>
+
+      <img src="./img/linkedin.png" class="icon" />
+      <a
+        href="https://www.linkedin.com/in/alexandra-cordeiro-campos/"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
     </div>
   </section>
 
+  <!-- SCRIPTS -->
   <script src="js/main.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>
